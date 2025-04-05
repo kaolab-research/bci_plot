@@ -1,0 +1,77 @@
+subjects:
+  H1:
+    2024/02/14:
+      - [A, CL_CP_1, 0.2, the targets were centered at 0.7]
+      - [B, CL_CP_2, 0.2]
+      - [A, CL_CP_3, 0.2]
+      - [A, CL_CP_5, 0.2]
+      - [B, CL_CP_6, 0.2]
+      - [A, CL_CP_7, 0.2]
+    2024/02/15:
+      - [A, CL_5, 0.2, the targets were centered at 0.7]
+      - [B, CL_6, 0.2]
+      - [A, CL_7, 0.2]
+      - [A, CL_8, 0.15]
+      - [B, CL_9, 0.15]
+      - [A, CL_10, 0.15]
+    2024/02/20:
+      - [A, CL_5, 0.2, the targets were centered at 0.7]
+      - [B, CL_6, 0.2]
+      - [B, CL_7, 0.2]
+      - [A, CL_8, 0.2]
+  H2:
+    2024/02/16:
+      - [A, CL_2, 0.2, Control is not great, have problem with down.]
+      - [B, CL_3, 0.2, the targets were centered at 0.8]
+      - [A, CL_4, 0.2, Nice control, but problem with selection.]
+      - [B, CL_6, 0.2, Control is a little bit worse compared with B2. Hard to escape the wrong position.]
+      - [A, CL_7, 0.2]
+  S2:
+    2024/03/18:
+      - [A, CL_3, 0.2]
+      - [B, CL_4, 0.2]
+      - [A, CL_5, 0.2]
+      - [B, CL_6, 0.2, '2 moments of twitches: sudden up-right or up-left movement. After relaxing, movement was better.']
+  H4:
+    2024/03/01:
+      - [A, CL_4, 0.2]
+      - [B, CL_5, 0.2]
+      - [A, CL_6, 0.2]
+    2024/03/04:
+      - [A, CL_5, 0.2]
+      - [B, CL_6, 0.2]
+      - [A, CL_7, 0.2]
+      - [B, CL_8, 0.2, changed control strategy; less freq feet usage]
+      - [A, CL_9, 0.2]
+    2024/03/11:
+      - [A, CL_5, 0.2]
+      - [B, CL_6, 0.2]
+      - [A, CL_7, 0.2]
+
+ABA:
+  - session: ['2024-02-14_H1_CL_CP_1', '2024-02-14_H1_CL_CP_2', '2024-02-14_H1_CL_CP_3'] 
+    detail: lstm trained with 0.7, 0.2 window
+  - session: ['2024-02-14_H1_CL_CP_5', '2024-02-14_H1_CL_CP_6', '2024-02-14_H1_CL_CP_7'] 
+    detail: lstm trained with 0.7, 0.2 window (dup)
+  - session: ['2024-02-15_H1_CL_5', '2024-02-15_H1_CL_6', '2024-02-15_H1_CL_7']
+    detail: lstm trained with 0.7, 0.2 window
+  - session: ['2024-02-15_H1_CL_8', '2024-02-15_H1_CL_9', '2024-02-15_H1_CL_10', ]
+    detail: lstm trained with 0.7, 0.15 window # 0.15 window
+  - session: ['2024-02-20_H1_CL_5', '2024-02-20_H1_CL_6', '2024-02-20_H1_CL_8', ]
+    detail: lstm trained with 0.7, 0.2 window
+  - session: ['2024-02-20_H1_CL_5', '2024-02-20_H1_CL_7', '2024-02-20_H1_CL_8', ]
+    detail: lstm trained with 0.8, 0.2 window (dup)
+  - session: ['2024-02-16_H2_CL_2', '2024-02-16_H2_CL_3', '2024-02-16_H2_CL_4',]
+    detail: lstm trained with 0.8, 0.2 window
+  - session: ['2024-02-16_H2_CL_4', '2024-02-16_H2_CL_6', '2024-02-16_H2_CL_7']
+    detail: lstm trained with 0.8, 0.2 window (dup)
+  - session: ['2024-03-01_H4_CL_4', '2024-03-01_H4_CL_5', '2024-03-01_H4_CL_6']
+    detail: lstm trained with 0.8, 0.2 window
+  - session: ['2024-03-04_H4_CL_5', '2024-03-04_H4_CL_6', '2024-03-04_H4_CL_7']
+    detail: lstm trained with 0.8, 0.2 window
+  - session: ['2024-03-04_H4_CL_7', '2024-03-04_H4_CL_8', '2024-03-04_H4_CL_9']
+    detail: lstm trained with 0.8, 0.2 window (dup)
+  - session: ['2024-03-11_H4_CL_5', '2024-03-11_H4_CL_6', '2024-03-11_H4_CL_7']
+    detail: lstm trained with 0.8, 0.2 window
+  - session: ['2024-03-18_S2_CL_3', '2024-03-18_S2_CL_4', '2024-03-18_S2_CL_5']
+    detail: lstm trained with 0.8, 0.2 window
